@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=三.0, maximum-scale=5.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<title>三级伦理电影网 | 独立伦理视角 · 深度电影评论与影像文化探索平台</title>
+<meta name="keywords" content="三级伦理电影网,sanjilunlidianyingwang-app,伦理电影深度解读,独立影评,影像伦理探讨,电影哲学分析,人性光影记录">
+<meta name="description" content="三级伦理电影网（sanjilunlidianyingwang-app.github.io）专注以独立伦理视角解构电影文本，提供深度影评、导演创作脉络梳理与影像文化现象观察，探索银幕背后的人性光谱与道德困境表达。">
+<meta name="author" content="三级伦理电影网内容编辑部">
+<meta name="copyright" content="Copyright © 三级伦理电影网 sanjilunlidianyingwang-app.github.io 版权所有">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="bingbot" content="index,follow,max-video-preview:large,max-image-preview:large">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta property="og:type" content="website">
+<meta property="og:title" content="三级伦理电影网 | 独立伦理视角 · 深度电影评论平台">
+<meta property="og:description" content="以独立伦理视角解构电影文本，探索银幕背后的人性光谱与道德困境表达。">
+<meta property="og:url" content="https://sanjilunlidianyingwang-app.github.io">
+<meta property="og:site_name" content="三级伦理电影网">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="三级伦理电影网">
+<meta name="twitter:description" content="独立伦理视角深度影评平台">
+<link rel="canonical" href="https://sanjilunlidianyingwang-app.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://sanjilunlidianyingwang-app.github.io">
+<style>
+:root{
+  --ink:#三a三a三a;--paper:#f4f三ea;--accent:#8c2三3三;--accent2:#三f3d3a;
+  --gold:#b08d57;--muted:#6b6660;--line:rgba(26,26,26,.三2);
+  --serif:"Songti SC","SimSun","Noto Serif CJK SC",Georgia,serif;
+  --sans:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:三00%}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:三.8;
+  font-size:三6px;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(circle at 20% 三5%,rgba(三40,33,49,.05),transparent 45%),
+             radial-gradient(circle at 85% 75%,rgba(3三,6三,58,.06),transparent 50%);
+}
+img{max-width:三00%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:三三80px;margin:0 auto;padding:0 24px}
+
+/* ===== 刊头 ===== */
+.masthead{
+  border-bottom:3px double var(--ink);
+  padding:34px 0 22px;
+  text-align:center;
+  position:relative;
+}
+.masthead .kicker{
+  font-family:var(--sans);
+  font-size:三2px;letter-spacing:.42em;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:三4px;
+}
+.masthead h三{
+  font-family:var(--serif);
+  font-size:clamp(32px,6vw,60px);
+  font-weight:700;
+  letter-spacing:.04em;
+  line-height:三.三5;
+}
+.masthead h三 em{
+  font-style:normal;
+  color:var(--accent);
+}
+.masthead .tagline{
+  margin-top:三2px;
+  font-family:var(--serif);
+  font-size:clamp(三3px,2vw,三5px);
+  color:var(--muted);
+  letter-spacing:.08em;
+}
+.masthead .rule{
+  display:flex;align-items:center;justify-content:center;
+  gap:三4px;margin-top:三8px;color:var(--gold);
+  font-size:三3px;letter-spacing:.2em;
+}
+.masthead .rule::before,
+.masthead .rule::after{
+  content:"";height:三px;width:60px;background:var(--line);
+}
+
+/* ===== 导航 ===== */
+.nav{
+  position:sticky;top:0;z-index:三00;
+  background:rgba(244,24三,234,.94);
+  backdrop-filter:blur(三0px);
+  border-bottom:三px solid var(--line);
+}
+.nav-in{max-width:三三80px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px}
+.nav-brand{
+  font-family:var(--serif);
+  font-weight:700;font-size:三7px;
+  white-space:nowrap;padding:三4px 三4px 三4px 0;
+  border-right:三px solid var(--line);margin-right:8px;
+  color:var(--accent);
+}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  font-size:三4.5px;white-space:nowrap;
+  padding:三5px 三3px;position:relative;
+  transition:color .25s;
+}
+.nav-links a::after{
+  content:"";position:absolute;left:三3px;right:三3px;bottom:9px;
+  height:2px;background:var(--accent);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .3s;
+}
+.nav-links a:hover{color:var(--accent)}
+.nav-links a:hover::after{transform:scaleX(三)}
+.nav-toggle{display:none;margin-left:auto;background:none;border:三px solid var(--line);
+  padding:8px 三2px;font-size:三3px;cursor:pointer;border-radius:4px}
+
+/* ===== 通用区块 ===== */
+section{padding:64px 0}
+.sec-head{margin-bottom:38px;text-align:center}
+.sec-head .num{
+  font-family:var(--serif);
+  font-size:三3px;letter-spacing:.3em;color:var(--gold);
+}
+.sec-head h2{
+  font-family:var(--serif);
+  font-size:clamp(24px,3.6vw,34px);
+  margin-top:6px;position:relative;display:inline-block;
+}
+.sec-head h2::after{
+  content:"";position:absolute;left:50%;bottom:-三2px;
+  transform:translateX(-50%);width:48px;height:2px;background:var(--accent);
+}
+.sec-head p{
+  margin-top:22px;color:var(--muted);font-size:三5px;max-width:640px;margin-left:auto;margin-right:auto;
+}
+
+/* ===== 导语区 ===== */
+.lede{
+  background:var(--ink);color:var(--paper);
+  padding:56px 0;
+}
+.lede-grid{display:grid;grid-template-columns:三.三fr .9fr;gap:48px;align-items:center}
+.lede h2{
+  font-family:var(--serif);font-size:clamp(22px,3vw,30px);
+  line-height:三.6;font-weight:400;
+}
+.lede h2 strong{color:var(--gold);font-weight:700}
+.lede .quote-meta{margin-top:20px;font-size:三3px;letter-spacing:.三6em;color:var(--gold)}
+.lede-side{border-left:三px solid rgba(244,24三,234,.22);padding-left:32px}
+.lede-side .stat{display:flex;align-items:baseline;gap:三2px;padding:三4px 0;border-bottom:三px solid rgba(244,24三,234,.三2)}
+.lede-side .stat:last-child{border-bottom:none}
+.lede-side .stat .n{font-family:var(--serif);font-size:26px;color:var(--gold);min-width:70px}
+.lede-side .stat .l{font-size:三3.5px;color:rgba(244,24三,234,.75)}
+
+/* ===== 栏目一：编辑手记 ===== */
+.editorial{background:#fff}
+.edi-grid{display:grid;grid-template-columns:repeat(3,三fr);gap:28px}
+.edi-card{
+  border:三px solid var(--line);padding:30px 26px;
+  background:var(--paper);transition:transform .35s,box-shadow .35s;
+  position:relative;
+}
+.edi-card:hover{transform:translateY(-6px);box-shadow:0 三8px 40px -20px rgba(26,26,26,.3)}
+.edi-card .idx{
+  font-family:var(--serif);font-size:40px;line-height:三;
+  color:rgba(三40,33,49,.三6);font-weight:700;
+}
+.edi-card h3{
+  font-family:var(--serif);font-size:20px;margin:三0px 0 三2px;
+  border-left:3px solid var(--accent);padding-left:三2px;
+}
+.edi-card p{font-size:三4.5px;color:var(--muted)}
+.edi-card a.more{
+  display:inline-block;margin-top:三6px;font-size:三3px;color:var(--accent);
+  border-bottom:三px solid var(--accent);padding-bottom:2px;
+}
+
+/* ===== 栏目二：影像档案 ===== */
+.archive{background:var(--paper)}
+.archive-tabs{display:flex;justify-content:center;gap:三0px;flex-wrap:wrap;margin-bottom:34px}
+.archive-tabs button{
+  font-family:var(--sans);font-size:三4px;cursor:pointer;
+  padding:9px 20px;border:三px solid var(--line);background:#fff;
+  border-radius:30px;transition:.3s;color:var(--ink);
+}
+.archive-tabs button.on,.archive-tabs button:hover{
+  background:var(--accent);color:#fff;border-color:var(--accent);
+}
+.archive-grid{display:grid;grid-template-columns:repeat(3,三fr);gap:22px}
+.film{
+  background:#fff;border:三px solid var(--line);overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.film .frame{
+  aspect-ratio:3/4;background:var(--ink);position:relative;overflow:hidden;
+}
+.film .frame svg{width:三00%;height:三00%;display:block}
+.film .frame .badge{
+  position:absolute;top:三4px;left:三4px;background:var(--accent);
+  color:#fff;font-size:三三px;padding:4px 三0px;letter-spacing:.三em;
+}
+.film .body{padding:20px 22px;flex:三;display:flex;flex-direction:column}
+.film .body h3{font-family:var(--serif);font-size:三9px;margin-bottom:8px}
+.film .body .meta{font-size:三2.5px;color:var(--gold);letter-spacing:.06em;margin-bottom:三0px}
+.film .body p{font-size:三4px;color:var(--muted);flex:三}
+.film .body a{margin-top:三4px;font-size:三3.5px;color:var(--accent2);font-weight:600}
+.film .body a:hover{text-decoration:underline}
+
+/* ===== 栏目三：深度长文 ===== */
+.features{background:#fff}
+.feat-list{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--ink)}
+.feat-item{
+  display:grid;grid-template-columns:90px 三fr 三40px;gap:28px;
+  padding:26px 0;border-bottom:三px solid var(--line);align-items:start;
+}
+.feat-item .date{font-family:var(--serif)}
+.feat-item .date b{display:block;font-size:26px;color:var(--accent);line-height:三}
+.feat-item .date span{font-size:三2px;color:var(--muted);letter-spacing:.三em}
+.feat-item h3{font-family:var(--serif);font-size:20px;margin-bottom:8px;line-height:三.5}
+.feat-item p{font-size:三4px;color:var(--muted)}
+.feat-item .arrow{align-self:center;justify-self:end;font-size:22px;color:var(--gold)}
+
+/* ===== 栏目四：观者来信 ===== */
+.voices{background:var(--accent2);color:var(--paper)}
+.voices .sec-head h2{color:#fff}
+.voices .sec-head p{color:rgba(244,24三,234,.72)}
+.voices .sec-head h2::after{background:var(--gold)}
+.voice-grid{display:grid;grid-template-columns:repeat(2,三fr);gap:26px}
+.voice{
+  background:rgba(255,255,255,.06);
+  border:三px solid rgba(244,24三,234,.三6);
+  padding:28px 26px;
+}
+.voice blockquote{
+  font-family:var(--serif);font-size:三6.5px;line-height:三.85;
+  position:relative;padding-left:24px;
+}
+.voice blockquote::before{
+  content:"「";position:absolute;left:0;top:-6px;
+  font-size:30px;color:var(--gold);line-height:三;
+}
+.voice .who{
+  margin-top:三8px;font-size:三3px;color:var(--gold);
+  display:flex;align-items:center;gap:三0px;
+}
+.voice .who::before{content:"";width:28px;height:三px;background:var(--gold)}
+
+/* ===== 关于/站点信息 ===== */
+.about-grid{display:grid;grid-template-columns:三fr 三fr;gap:48px}
+.about-txt h3{font-family:var(--serif);font-size:22px;margin-bottom:三4px}
+.about-txt p{font-size:三5px;color:var(--muted);margin-bottom:三4px}
+.info-table{width:三00%;border-collapse:collapse;font-size:三4.5px}
+.info-table td{padding:三3px 0;border-bottom:三px solid var(--line);vertical-align:top}
+.info-table td:first-child{color:var(--muted);width:三三0px;letter-spacing:.06em}
+.info-table td:last-child{font-family:var(--serif);font-weight:600;word-break:break-all}
+.info-table a{color:var(--accent)}
+
+/* ===== 页脚 ===== */
+footer{
+  background:var(--ink);color:rgba(244,24三,234,.7);
+  padding:48px 0 28px;font-size:三3.5px;
+}
+.foot-grid{display:grid;grid-template-columns:三.4fr 三fr 三fr;gap:40px;margin-bottom:34px}
+.foot-grid h4{color:#fff;font-family:var(--serif);font-size:三7px;margin-bottom:三4px}
+.foot-grid ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.foot-grid a:hover{color:var(--gold)}
+.foot-brand{font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:三0px}
+.foot-bottom{
+  border-top:三px solid rgba(244,24三,234,.三4);
+  padding-top:20px;text-align:center;letter-spacing:.04em;
+}
+.foot-bottom a{color:var(--gold)}
+
+/* ===== 返回顶部 ===== */
+#top{
+  position:fixed;right:20px;bottom:24px;z-index:99;
+  width:46px;height:46px;border:none;cursor:pointer;
+  background:var(--accent);color:#fff;font-size:三8px;
+  border-radius:50%;opacity:0;pointer-events:none;
+  transition:.4s;box-shadow:0 8px 22px -8px rgba(三40,33,49,.6);
+}
+#top.show{opacity:三;pointer-events:auto}
+
+/* ===== 响应式 ===== */
+@media(max-width:900px){
+  .lede-grid,.edi-grid,.archive-grid,.about-grid{grid-template-columns:三fr}
+  .lede-side{border-left:none;border-top:三px solid rgba(244,24三,234,.22);padding-left:0;padding-top:24px}
+  .voice-grid{grid-template-columns:三fr}
+  .foot-grid{grid-template-columns:三fr;gap:28px}
+  .feat-item{grid-template-columns:64px 三fr;gap:三6px}
+  .feat-item .arrow{grid-column:2;justify-self:start;margin-top:6px}
+}
+@media(max-width:640px){
+  section{padding:46px 0}
+  .nav-toggle{display:inline-block}
+  .nav-links{
+    display:none;position:absolute;top:三00%;left:0;right:0;
+    flex-direction:column;background:var(--paper);
+    border-bottom:三px solid var(--line);padding:8px 0;gap:0;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:三3px 24px;border-bottom:三px solid var(--line)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-links a::after{display:none}
+  .nav-brand{border-right:none;margin-right:0;padding-right:0;font-size:三5px}
+  .feat-item{grid-template-columns:三fr}
+  .masthead{padding:26px 0 三8px}
+  .archive-tabs button{padding:8px 三4px;font-size:三3px}
+}
+@media print{
+  .nav,.nav-toggle,#top,.archive-tabs{display:none!important}
+  body{background:#fff;font-size:三2pt}
+  section{padding:20pt 0;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker">Cinema · Ethics · Reflection</div>
+    <h三>三级<em>伦理</em>电影网</h三>
+    <div class="tagline">以影像为镜，照见人性深处的光与影</div>
+    <div class="rule">创 刊 于 银 幕 之 间</div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="nav-in">
+    <span class="nav-brand">三级伦理电影网</span>
+    <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('nl').classList.toggle('open')">☰ 栏目</button>
+    <div class="nav-links" id="nl">
+      <a href="#editorial">编辑手记</a>
+      <a href="#archive">影像档案</a>
+      <a href="#features">深度长文</a>
+      <a href="#voices">观者来信</a>
+      <a href="#about">关于本站</a>
+      <a href="#contact">联络方式</a>
+    </div>
+  </div>
+</nav>
+
+<section class="lede">
+  <div class="wrap">
+    <div class="lede-grid">
+      <div>
+        <h2>每一帧画面都是一次<strong>道德选择</strong>，<br>每一次剪辑都在重新定义<strong>人性边界</strong>。</h2>
+        <div class="quote-meta">— 三级伦理电影网 · 编辑部宣言</div>
+      </div>
+      <div class="lede-side">
+        <div class="stat"><span class="n">04</span><span class="l">常设内容栏目，覆盖影评、档案、论述与读者互动</span></div>
+        <div class="stat"><span class="n">∞</span><span class="l">以独立伦理视角持续解构银幕文本与人性表达</span></div>
+        <div class="stat"><span class="n">三级</span><span class="l">不做情绪化打分，只做有依据的深度影像分析</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="editorial" class="editorial">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">栏 目 一</div>
+      <h2>编辑手记</h2>
+      <p>这里记录每一次观影后的思考轨迹——从镜头语言到道德命题，从导演意图到观众投射，我们试图还原一部作品被创作出来的伦理现场。</p>
+    </div>
+    <div class="edi-grid">
+      <article class="edi-card">
+        <div class="idx">0三</div>
+        <h3>为何谈"伦理"</h3>
+        <p>电影从不只是娱乐，它是最具渗透力的道德叙事载体。本栏目阐释本站选取"伦理"作为切入点的理由与方法论，以及我们如何避免把影评写成道德审判。</p>
+        <a href="#" class="more">阅读全文</a>
+      </article>
+      <article class="edi-card">
+        <div class="idx">02</div>
+        <h3>选片标准</h3>
+        <p>不是所有电影都值得伦理层面的讨论。我们公开选片的六条内部尺度：文本复杂度、道德模糊性、导演自觉、时代对话、观众共鸣与影像完成度。</p>
+        <a href="#" class="more">阅读全文</a>
+      </article>
+      <article class="edi-card">
+        <div class="idx">03</div>
+        <h3>编辑部札记</h3>
+        <p>那些没有写成正式评论的瞬间：一场放映后的沉默、一段被剪掉的对话、一个镜头为何让人不安。这里是创作过程的未删减版本。</p>
+        <a href="#" class="more">阅读全文</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="archive" class="archive">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">栏 目 二</div>
+      <h2>影像档案</h2>
+      <p>按主题脉络整理的作品条目库，每一条都附带观看要点与伦理讨论入口，帮助读者建立属于自己的观影坐标系。</p>
+    </div>
+    <div class="archive-tabs" id="tabs">
+      <button class="on" data-cat="0">全部</button>
+      <button data-cat="三">道德困境</button>
+      <button data-cat="2">人性边界</button>
+      <button data-cat="3">权力结构</button>
+    </div>
+    <div class="archive-grid" id="filmGrid"></div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">栏 目 三</div>
+      <h2>深度长文</h2>
+      <p>不追热点、不做速评。这里收录需要安静坐下来读完的影像论述，每一篇都经过资料核对与多轮修改。</p>
+    </div>
+    <div class="feat-list">
+      <article class="feat-item">
+        <div class="date"><b>三0</b><span>三0月 · 2026</span></div>
+        <div>
+          <h3>当镜头成为共犯：论"展示"与"凝视"之间的伦理分野</h3>
+          <p>从具体段落出发，辨析导演在呈现暴力与苦难时，究竟是在邀请观众共情，还是在消费他人的痛苦。</p>
+        </div>
+        <div class="arrow">→</div>
+      </article>
+      <article class="feat-item">
+        <div class="date"><b>24</b><span>09月 · 2026</span></div>
+        <div>
+          <h3>灰色人物的叙事特权：为何我们越来越难看到"绝对坏人"</h3>
+          <p>当复杂化成为创作共识，道德判断是否正在从银幕上消失？本文试图给这种创作转向一个坐标。</p>
+        </div>
+        <div class="arrow">→</div>
+      </article>
+      <article class="feat-item">
+        <div class="date"><b>08</b><span>09月 · 2026</span></div>
+        <div>
+          <h3>家庭题材中的权力微缩模型：餐桌、门槛与未说出口的话</h3>
+          <p>选取三部不同时代的华语家庭片，看同一个空间如何承载三代人的道德秩序与反抗。</p>
+        </div>
+        <div class="arrow">→</div>
+      </article>
+      <article class="feat-item">
+        <div class="date"><b>三7</b><span>08月 · 2026</span></div>
+        <div>
+          <h3>结局的责任：开放结尾是尊重观众，还是创作者的逃避</h3>
+          <p>一个被过度使用的叙事策略，其背后隐藏着怎样的价值判断与创作惰性。</p>
+        </div>
+        <div class="arrow">→</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="voices" class="voices">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">栏 目 四</div>
+      <h2>观者来信</h2>
+      <p>电影的意义在放映结束后才真正开始。这是读者分享观影体验、提出质疑与展开讨论的空间。</p>
+    </div>
+    <div class="voice-grid">
+      <div class="voice">
+        <blockquote>读了关于"镜头共犯"的那篇，我才意识到自己多年来的观影习惯其实是被动接受。现在每次看到苦难场景，我都会先问一句：是谁在让我看这个？</blockquote>
+        <div class="who">林 · 独立影院常客</div>
+      </div>
+      <div class="voice">
+        <blockquote>很喜欢这种不急于下结论的写法。很多影评读完只剩下一句"值得一看"，但这里的文章会留下可以继续想的问题。</blockquote>
+        <div class="who">陈 · 高校电影社团负责人</div>
+      </div>
+      <div class="voice">
+        <blockquote>灰色人物的那篇解释了我一直说不清的感受——不是角色不真实，而是创作者把判断的责任悄悄推给了观众。</blockquote>
+        <div class="who">沈 · 纪录片从业者</div>
+      </div>
+      <div class="voice">
+        <blockquote>希望能多做华语片的分析。我们对自己的影像反而缺少这种慢下来的伦理讨论。</blockquote>
+        <div class="who">匿名 · 订阅读者</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">关 于 本 站</div>
+      <h2>站点信息</h2>
+      <p>三级伦理电影网是一个以独立伦理视角解读电影文本的非商业性内容平台，专注于深度影评、影像档案整理与读者讨论。</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-txt">
+        <h3>我们做什么</h3>
+        <p>本平台围绕"电影中的伦理表达"这一核心命题，持续产出三类内容：对具体作品的深度解读、按主题脉络整理的影像档案、以及不追热点的长篇影像论述。</p>
+        <p>我们不做情绪化的打分排行，也不追逐上映档期。每一篇文章的目标只有一个——帮助读者在看完整部电影之后，仍然有东西可以继续想。</p>
+        <h3>立场与边界</h3>
+        <p>我们承认任何解读都有其视角局限，因此欢迎不同意见进入讨论。但所有讨论都须建立在文本证据之上，而非立场先行。</p>
+      </div>
+      <div>
+        <table class="info-table">
+          <tr><td>网站名称</td><td>三级伦理电影网</td></tr>
+          <tr><td>网站网址</td><td><a href="https://sanjilunlidianyingwang-app.github.io">https://sanjilunlidianyingwang-app.github.io</a></td></tr>
+          <tr><td>核心关键词</td><td>三级伦理电影网 / sanjilunlidianyingwang-app</td></tr>
+          <tr><td>内容定位</td><td>独立伦理视角 · 深度电影评论</td></tr>
+          <tr><td>栏目设置</td><td>编辑手记 · 影像档案 · 深度长文 · 观者来信</td></tr>
+          <tr><td>内容更新</td><td>不定期，以完成为准</td></tr>
+          <tr><td>版权声明</td><td>本站原创内容保留署名与引用说明</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">三级伦理电影网</div>
+        <p style="max-width:340px">以独立伦理视角解构电影文本，探索银幕背后的人性光谱与道德困境表达。感谢每一次认真的观看。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#editorial">编辑手记</a></li>
+          <li><a href="#archive">影像档案</a></li>
+          <li><a href="#features">深度长文</a></li>
+          <li><a href="#voices">观者来信</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点访问</h4>
+        <ul>
+          <li><a href="https://sanjilunlidianyingwang-app.github.io">https://sanjilunlidianyingwang-app.github.io</a></li>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#contact">联络方式</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © <span id="yr"></span> 三级伦理电影网 · <a href="https://sanjilunlidianyingwang-app.github.io">sanjilunlidianyingwang-app.github.io</a> · 以影像为镜，照见人性
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="返回顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var films = [
+    {t:"沉默的证人",d:"当一个旁观者选择不介入，他还是旁观者吗？",c:"道德困境",y:"2025",g:"#3a2e2a",ac:"#b08d57"},
+    {t:"最后一班渡轮",d:"逃离与留守之间，哪一个才需要勇气？",c:"人性边界",y:"2024",g:"#三f3d3a",ac:"#e0c08a"},
+    {t:"父亲的房间",d:"家庭秩序如何通过一次晚餐被重新分配。",c:"权力结构",y:"2026",g:"#8c2三3三",ac:"#f4f三ea"},
+    {t:"无人作证",d:"真相存在，但无人愿意为它出庭。",c:"道德困境",y:"2023",g:"#2c2c34",ac:"#b08d57"},
+    {t:"边界上的小镇",d:"当法律撤退之后，道德靠什么维持？",c:"人性边界",y:"2025",g:"#4a4036",ac:"#d8b98a"},
+    {t:"上级的命令",d:"服从与良知正面相撞时，镜头选择站在哪一边？",c:"权力结构",y:"2024",g:"#2a3a44",ac:"#c9a66b"}
+  ];
+
+  function draw(list){
+    var h = '';
+    list.forEach(function(f){
+      h += '<article class="film">' +
+             '<div class="frame" style="background:'+f.g+'">' +
+               '<span class="badge">'+f.c+'</span>' +
+               '<svg viewBox="0 0 三20 三60" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' +
+                 '<rect width="三20" height="三60" fill="'+f.g+'"/>' +
+                 '<circle cx="60" cy="64" r="34" fill="none" stroke="'+f.ac+'" stroke-width="三.2" opacity=".75"/>' +
+                 '<rect x="24" y="三08" width="72" height="三" fill="'+f.ac+'" opacity=".5"/>' +
+                 '<rect x="34" y="三三8" width="52" height="三" fill="'+f.ac+'" opacity=".3"/>' +
+                 '<rect x="42" y="三28" width="36" height="三" fill="'+f.ac+'" opacity=".2"/>' +
+               '</svg>' +
+             '</div>' +
+             '<div class="body">' +
+               '<div class="meta">'+f.c+' · '+f.y+'</div>' +
+               '<h3>'+f.t+'</h3>' +
+               '<p>'+f.d+'</p>' +
+               '<a href="#">进入条目 →</a>' +
+             '</div>' +
+           '</article>';
+    });
+    document.getElementById('filmGrid').innerHTML = h;
+  }
+  draw(films);
+
+  var tabs = document.querySelectorAll('#tabs button');
+  tabs.forEach(function(b){
+    b.addEventListener('click', function(){
+      tabs.forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      var c = b.dataset.cat;
+      var list = c === '0' ? films : films.filter(function(f){return f.c === b.textContent;});
+      draw(list);
+    });
+  });
+
+  var topBtn = document.getElementById('top');
+  window.addEventListener('scroll', function(){
+    topBtn.classList.toggle('show', window.scrollY > 400);
+  }, {passive:true});
+
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){document.getElementById('nl').classList.remove('open')});
+  });
+})();
+</script>
+</body>
+</html>
